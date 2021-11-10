@@ -4,4 +4,25 @@
 // Bonus:
 // Aggiungere alla pagina un’immagine, presa anch’essa da un data.
 
-// foto casuali https://unsplash.it/300/300?image=
+
+
+var app = new Vue (
+    {
+        el: "#box",
+        data:{
+            main:"Vuoi un immagine?",
+            text:"big",
+            immage:"",
+            visual:"none",
+            btntext: "schiaccia qui",
+        },
+        methods:{
+            immageOn: function () {
+                //immagine
+                this.immage = "https://unsplash.it/300/300?image=";
+                this.visual = "img on"
+                this.btntext = "-_-"                   
+            }
+        }
+    }
+);
